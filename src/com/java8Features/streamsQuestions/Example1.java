@@ -26,6 +26,12 @@ public class Example1 {
                 System.out.println(i);
             }
         }
+
+//        using streams
+//        if you want more control over key value then above method is prefered.
+        map.entrySet().stream().forEach(entry -> {
+            System.out.println(entry.getKey()+" "+entry.getValue());
+        });
     }
 
 }
