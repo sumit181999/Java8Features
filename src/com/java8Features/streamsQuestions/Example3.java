@@ -32,5 +32,9 @@ public class Example3 {
         System.out.println("------------");
         map.entrySet().forEach(characterLongEntry -> System.out.print(characterLongEntry.getKey()+"="+characterLongEntry.getValue()+"  "));
 
+        System.out.println("");
+        System.out.println("------------");
+        map.forEach((key,value)-> System.out.print(key+"="+value+"  "));
+
     }
 }

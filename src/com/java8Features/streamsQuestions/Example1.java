@@ -17,21 +17,27 @@ public class Example1 {
         Set<Map.Entry<Boolean,List<Integer>>> entrySet = map.entrySet();
         for(Map.Entry<Boolean,List<Integer>> entry : entrySet){
             if(entry.getKey()){
-                System.out.println("Even Numbers");
+                System.out.print("Even Numbers");
             }else{
-                System.out.println("Odd Numbers");
+                System.out.print("Odd Numbers");
             }
+            System.out.println("");
             List<Integer> list = entry.getValue();
             for(Integer i : list){
-                System.out.println(i);
+                System.out.print(i+" ");
             }
+            System.out.println("");
         }
 
 //        using streams
-//        if you want more control over key value then above method is prefered.
+        System.out.println("");
         map.entrySet().stream().forEach(entry -> {
             System.out.println(entry.getKey()+" "+entry.getValue());
         });
+        //        if you want more control over key value then above methods are preferred.
+       //        basically you will use entrySet() when you most often want to use stream api as shown above.
+        System.out.println("");
+        map.forEach((key,value)-> System.out.println(key+" "+value));
     }
 
 }

@@ -15,5 +15,8 @@ public class Example4 {
         map.entrySet().forEach(item->{
             System.out.println(item.getKey()+" "+item.getValue());
         });
+//        below is the preferred method
+        System.out.println("");
+        map.forEach((key,value)-> System.out.println(key+" "+value));
     }
 }

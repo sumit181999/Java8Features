@@ -1,5 +1,8 @@
 package com.java.singleton;
 
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
 //In Java, Singleton class is a class that controls the object creation.
 // It means the singleton class allows us to create a single object of the class, at a time.
 // It is usually used to control access to resources, such as database connections or sockets.
@@ -30,5 +33,8 @@ public class SingletonClass {
         System.out.println(a);
         SingletonClassExample b = SingletonClassExample.getInstance();
         System.out.println(b);
+        IntStream intStream = IntStream.of(1,3,54,656,76);
+
+
     }
 }
