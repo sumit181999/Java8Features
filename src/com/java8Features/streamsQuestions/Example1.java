@@ -1,10 +1,8 @@
 package com.java8Features.streamsQuestions;
 
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 // sorting even and odd number using stream partitioningBy method
